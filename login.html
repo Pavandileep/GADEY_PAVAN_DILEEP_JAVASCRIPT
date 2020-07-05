@@ -1,0 +1,92 @@
+<html>
+
+<head>
+	<title>Login</title>
+	<style>
+		.container {
+ 			border-radius: 5px;
+ 			background-color: #3636;
+  			padding: 20px;
+			width: 55%;
+			}
+		.input{
+			width: 150%;
+ 			padding: 12px;
+ 			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+  			margin-top: 10px;
+  			margin-bottom: 16px;
+  			resize: vertical;
+			cursor: pointer;
+		}
+		
+
+	</style>
+
+	<script>
+		
+		function check()
+		{
+		
+				var x=document.getElementById("password").value;
+				
+				if(x.length >= 8)
+					document.getElementById("p2").innerHTML="";
+			
+				else	
+					document.getElementById("p2").innerHTML="Password must be 8 letter long";
+		
+		}	
+
+	</script>
+</head>
+<body>
+	<br>
+	<font color=white>
+		<div style = "background-color:#3b5998;">
+			<h1>Login</h1>
+		</div>
+		<a href = "signup.html">SignUp</a>
+	</font>
+	<hr>	
+
+	<br><br><br>
+	<center>
+	<br>
+	
+	<form class="container" action="successPage1.html">
+	<table>
+	<tr>
+		<th colspan=2>Login</th>
+	</tr>
+
+	<tr>
+		<td>User Name:</td>
+		<td><input type=text placeholder="UserName....." class="input" id="username" required></td>
+	</tr>
+	
+	<tr>
+	<tr>
+		<td>Password:</td>
+		<td><input type=password placeholder="Enter Your password......" id="password" onfocusout="check()" class="input" required>
+		<p id="p2"></p>
+	</tr>
+	
+	<tr>
+	<td>
+	<tr>
+		<td><input type=submit></td>
+		<td><a href="project.html"><button>cancel</button></a>
+		</td>
+	</tr>
+	</table>
+	</form>
+	
+	</center>
+		
+
+
+</body>
+
+</html>
